@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="24dp"
+    android:gravity="bottom"
+    android:background="@drawable/bg_nav_header">
+
+    <!-- Аватар -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="66dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/icon_photo" />
+
+    <!-- Имя -->
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Имя пользователя"
+        android:textColor="#F9FAFB"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Email -->
+    <TextView
+        android:id="@+id/textViewUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user@example.com"
+        android:textColor="#9CA3AF"
+        android:textSize="14sp"/>
+
+</LinearLayout>

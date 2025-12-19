@@ -1,0 +1,33 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // 1. Правила для пользователей (у вас уже есть)
+    match /users/{userId} {
+      allow read: if true;  // Все читают
+      allow write: if request.auth != null && request.auth.uid == userId; // Пишет только владелец
+    }
+    
+    // 2. КРИТИЧЕСКО ВАЖНО: Правила для стего-сообщений
+    match /stego_messages/{messageId} {
+      // Записывать может любой авторизованный пользователь
+      allow create: if request.auth != null;
+      // Читать может только получатель (receiverId) или отправитель (senderId)
+      allow read: if request.auth != null && 
+          (request.auth.uid == resource.data.receiverId || 
+           request.auth.uid == resource.data.senderId);
+      // Обновлять может только получатель (например, для пометки "прочитано")
+      allow update: if request.auth != null && 
+          request.auth.uid == resource.data.receiverId;
+      // Удалять может отправитель или получатель
+      allow delete: if request.auth != null && 
+          (request.auth.uid == resource.data.senderId || 
+           request.auth.uid == resource.data.receiverId);
+    }
+    
+    // 3. Правила для чатов (на будущее)
+    match /chats/{chatId} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "12536364922",
+    "project_id": "suceritychat",
+    "storage_bucket": "suceritychat.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12536364922:android:7d4c950e9f2ecdfe7b20c3",
+        "android_client_info": {
+          "package_name": "com.example.spytool"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHSjXUKO11ofaO0LEZf8YqwIgCZ84Ndpg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

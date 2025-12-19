@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="12dp"
+    android:background="#09101E">
+
+    <!-- Получатель -->
+    <TextView
+        android:id="@+id/textViewReceiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Получатель:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#E5E7EB"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Отправка стего-изображения"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#F9FAFB"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Карточка изображения -->
+    <ImageView
+        android:id="@+id/imageViewSelected"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_image_card"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Выбор изображения -->
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Выбрать изображение"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bg_button_primary"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Ввод сообщения -->
+    <Button
+        android:id="@+id/btnEnterMessage"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Ввести секретное сообщение"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bg_button_secondary"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Шаги -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Шаги"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#E5E7EB"
+        android:layout_marginBottom="6dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Выберите изображение\n2. Введите сообщение\n3. Нажмите «Отправить»\n4. Сообщение будет скрыто с помощью LSB"
+        android:textSize="14sp"
+        android:textColor="#9CA3AF"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Зашифровать и отправить -->
+    <Button
+        android:id="@+id/btnEncodeAndSend"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Зашифровать и отправить"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bg_button_accent"/>
+
+</LinearLayout>

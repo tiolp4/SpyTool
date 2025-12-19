@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#09101E"
+    tools:context=".RegisterActivity">
+
+    <com.example.spytool.animations.ShowView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.example.spytool.animations.OrnamentsView
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="Create Account"
+            android:textColor="#F9FAFB"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_input_selector"
+            android:drawableStart="@drawable/ic_mail"
+            android:drawablePadding="8dp"
+            android:hint="Email address"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="14dp"
+            android:textColor="#F9FAFB"
+            android:textColorHint="#9CA3AF" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_input_selector"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="8dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="14dp"
+            android:textColor="#F9FAFB"
+            android:textColorHint="#9CA3AF" />
+
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_input_selector"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="8dp"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="14dp"
+            android:textColor="#F9FAFB"
+            android:textColorHint="#9CA3AF" />
+
+        <TextView
+            android:id="@+id/textViewError"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/bg_error"
+            android:gravity="center_vertical"
+            android:text="@string/please_fill_in_all_fields"
+            android:textColor="#F87171"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:drawableStart="@drawable/ic_error"
+            android:drawablePadding="8dp"
+            android:paddingStart="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#0E1627"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Your account includes:"
+                android:textColor="#F9FAFB"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="✓ End-to-end encryption"
+                android:textColor="#34D399"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="✓ Zero-knowledge architecture"
+                android:textColor="#34D399"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✓ Stealth message hiding"
+                android:textColor="#34D399"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_button_selector"
+            android:text="Create Account"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</FrameLayout>

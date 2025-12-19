@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+
+    <path
+        android:pathData="
+            M24,0
+            H104
+            C118,0 128,10 128,24
+            V104
+            C128,118 118,128 104,128
+            H24
+            C10,128 0,118 0,104
+            V24
+            C0,10 10,0 24,0 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="0"
+                android:startY="0"
+                android:endX="128"
+                android:endY="128">
+                <item android:offset="0" android:color="#1EC9E8"/>
+                <item android:offset="0.5" android:color="#7A49F2"/>
+                <item android:offset="1" android:color="#B06CF7"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <path
+        android:pathData="
+            M64,28
+            C50,35 44,38 44,38
+            V64
+            C44,82 56,94 64,98
+            C72,94 84,82 84,64
+            V38
+            C84,38 78,35 64,28 Z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.15"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="7"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"/>
+
+    <!-- Внутренняя деталь щита -->
+    <path
+        android:pathData="
+            M64,34
+            C52,40 48,42 48,42
+            V64
+            C48,78 58,88 64,92
+            C70,88 80,78 80,64
+            V42
+            C80,42 76,40 64,34 Z"
+        android:strokeWidth="2"
+        android:strokeLineJoin="round"
+        android:fillColor="@android:color/transparent"/>
+
+    <path
+        android:pathData="
+            M92,8
+            a20,20 0 1,1 -0.1,0 Z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.9"/>
+
+    <!-- Внутренний круг бейджа -->
+    <path
+        android:pathData="
+            M92,10
+            a18,18 0 1,1 -0.1,0 Z"
+        android:fillColor="#55CFEF"/>
+
+    <!-- Замок внутри бейджа -->
+    <group
+        android:translateX="92"
+        android:translateY="19">
+        <path
+            android:pathData="
+                M-6,2
+                a6,6 0 0,1 12,0
+                v4
+                h2
+                a2,2 0 0,1 2,2
+                v8
+                a2,2 0 0,1 -2,2
+                h-16
+                a2,2 0 0,1 -2,-2
+                v-8
+                a2,2 0 0,1 2,-2
+                h2
+                v-4 Z"
+            android:fillColor="#FFFFFF"/>
+
+        <!-- Ключевая скважина -->
+        <path
+            android:pathData="
+                M-3,4
+                v-2
+                a2,2 0 0,1 6,0
+                v2"
+            android:strokeColor="#1EC9E8"
+            android:strokeWidth="1.9"
+            android:strokeLineCap="round"
+            android:fillColor="@android:color/transparent"/>
+    </group>
+</vector>

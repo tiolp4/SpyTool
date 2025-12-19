@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#09101E"
+    android:id="@+id/main">
+
+    <!-- Фон -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/animated_gradient" />
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:src="@drawable/applogo"
+        android:alpha="100"/>
+
+    <LinearLayout
+        android:id="@+id/loadingDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="64dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/dot1"
+            style="@style/SplashDot"/>
+
+        <View
+            android:id="@+id/dot2"
+            style="@style/SplashDot"
+            android:layout_marginHorizontal="10dp"/>
+
+        <View
+            android:id="@+id/dot3"
+            style="@style/SplashDot"/>
+
+    </LinearLayout>
+
+</FrameLayout>

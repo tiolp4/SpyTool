@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_encode"
+            android:icon="@drawable/ic_settings"
+            android:title="Кодировать сообщение" />
+
+        <item
+            android:id="@+id/nav_decode"
+            android:icon="@drawable/ic_settings"
+            android:title="Декодировать сообщение" />
+
+        <item
+            android:id="@+id/nav_chats"
+            android:icon="@drawable/ic_chat"
+            android:title="Чаты для отправки" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_settings"
+            android:title="Галерея стего-изображений" />
+    </group>
+
+    <item android:title="Настройки">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="Настройки шифрования" />
+        </menu>
+    </item>
+
+    <item android:title="Учетная запись">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Выйти" />
+        </menu>
+    </item>
+
+</menu>
